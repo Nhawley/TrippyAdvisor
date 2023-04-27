@@ -1,0 +1,22 @@
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+# ---- ENV variables ----#
+# iOS Paths
+XCODE_PROJ="./ios/TrippyAdvisor.xcodeproj";
+XCODE_WRKS="./ios/TrippyAdvisor.xcworkspace";
+
+# Android Paths
+ANDROID_DIR = "./android/"
+ANDROID_APP_DIR = "./android/app"
+ANDROID_GRADLE_PATH = "./android/app/build.gradle"
+
+default_platform(:ios)
+
+platform :ios do
+
+end
+
+platform :android do
+
+end
