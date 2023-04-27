@@ -5,6 +5,8 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "ios.dev": "APP_ENV=development npx react-native run-ios --simulator='iPhone 14'",
+    "ios.prod": "APP_ENV=production npx react-native run-ios --simulator='iPhone 14'",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
@@ -27,10 +29,15 @@
     "jest": "^29.2.1",
     "metro-react-native-babel-preset": "0.73.9",
     "prettier": "^2.4.1",
+    "react-native-dotenv": "^3.4.8",
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "@babel/core": "^7.20.2",
+    "babel-loader": "^8.3.0"
   }
 }
